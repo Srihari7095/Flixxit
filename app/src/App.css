@@ -1,0 +1,345 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter,sans-serif
+}
+ body{
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  color: #999;
+ }
+
+h1{
+  color: #fff;
+}
+/* footer */
+
+/* landing component */
+.landing-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(20, 20, 20, 0.221)),url('./images/background1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+  min-height: 90vh;
+}
+.showcase .heading{
+  font-weight: 700;
+	font-size: 4rem;
+	line-height: 1.1;
+	margin: 0 0 2rem;
+  color: white;
+}
+.logo h2{
+  color:#e50914;
+  font-size:2.5rem;
+}
+.registerButton button{
+  background-color: #e50914;
+  width: 25vw;
+  height: 5vh;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.showcase{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: 93vh;
+  position: relative;
+}
+.toggle-form{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  height: 5vh;
+  border-radius: 20px 20px 0 0;
+}
+.toggle-form div{
+  font-size: 20px;
+  color: #999;
+  font-weight: bold;
+}
+.activeDiv{
+  border-bottom: 2px solid #e50914;
+}
+
+.form-component{
+  text-align: center;
+  background-color: rgba(32, 31, 31, 0.936);
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 20px;
+}
+/* login component */
+.login-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+}
+.login-component p{
+  color: #e50914;
+  padding-bottom: 5px;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  width:30vw;
+  color: white;
+  padding: 40px;
+}
+
+.login form input{
+height: 30px;
+margin: 10px 0px 10px 0px;
+width: 15vw;
+border: none;
+border-radius: 5px;
+padding: 5px;
+}
+.login form button{
+  width: 7rem;
+  height: 1.5rem;
+  background-color:#e50914 ;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login form label{
+  padding: 15px;
+}
+.login .view-toggle{
+  position: relative;
+}
+.view-toggle .eye{
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  cursor: pointer;
+}
+.view-toggle .eye i{
+  color: black;
+}
+/* signup component */
+.signup-component{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  
+  width:30vw;
+  color: white;
+  padding: 30px;
+}
+.signup .view-toggle{
+  position: relative;
+}
+.signup .view-toggle .eye{
+  position: absolute;
+  right: 2.8rem;
+  bottom: 1rem;
+  cursor: pointer;
+}
+.signup .view-toggle .eye i{
+  color: black;
+}
+.signup form input{
+  height: 30px;
+margin: 10px 0px 10px 0px;
+width: 20rem;
+border: none;
+border-radius: 5px;
+padding: 5px;
+}
+.signup form button{
+  width: 7rem;
+  height: 1.5rem;
+  background-color:#e50914 ;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.signup form label{
+  padding: 20px;
+}
+.signup-component{
+  padding-bottom: 5px;
+  color: #e50914;
+}
+.passwordToggle{
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.expired{
+  width: 100%;
+  text-align: center;
+  background-color: #e50914;
+  color: white;
+  font-weight: 700;
+  height: 2rem;
+}
+
+
+
+@media (max-width: 820px) {
+  .landing-container {
+    min-height: 80vh;
+  }
+
+  .showcase .heading {
+    font-size: 3rem;
+  }
+
+  .toggle-form {
+    height: 4vh;
+    width: 50vw;
+  }
+  .view-toggle .eye{
+    right: 1rem;
+  }
+  .registerButton button {
+    width: 100%;
+    font-size: 20px;
+  }
+  .login-component{
+    width: 50vw;
+  }
+  .form-component{
+    width: 50vw;
+  }
+.login{
+  width: 50vw;
+}
+.signup-component{
+  width: 50vw;
+}
+.signup{
+  width: 50vw;
+}
+.signup .view-toggle .eye{
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
+}
+  .login form input,
+  .signup form input {
+    width: 100%;
+  }
+}
+
+/* Add media query for even smaller screens */
+@media (max-width:  392px) {
+  .landing-container {
+    min-height: 70vh;
+  }
+  .toggle-form {
+    height: 4vh;
+    width: 100%;
+
+  }
+  .view-toggle .eye{
+    right: 1rem;
+  }
+  .showcase .heading {
+    font-size: 1.5rem;
+  }
+  .login-component{
+    width: 100%;
+  }
+  .signup-component{
+    width: 100%;
+  }
+  .form-component{
+    width: 90%;
+  }
+  .signup{
+    width: 100%;
+  }
+  .login{
+    width: 100%;
+  }
+  .registerButton button {
+    width: 100%;
+    font-size: 18px;
+  }
+  .signup .view-toggle .eye{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
+  }
+  .login form input,
+  .signup form input {
+    width: 100%;
+  }
+}
+
+@media (max-width:  415px) {
+  .landing-container {
+    min-height: 70vh;
+  }
+  .toggle-form {
+    height: 4vh;
+    width: 100%;
+
+  }
+  .view-toggle .eye{
+    right: 1rem;
+  }
+  .showcase .heading {
+    font-size: 1.5rem;
+  }
+  .login-component{
+    width: 100%;
+  }
+  .signup-component{
+    width: 100%;
+  }
+  .form-component{
+    width: 90%;
+  }
+  .signup{
+    width: 100%;
+  }
+  .login{
+    width: 100%;
+  }
+  .registerButton button {
+    width: 100%;
+    font-size: 18px;
+  }
+  .signup .view-toggle .eye{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
+  }
+  .login form input,
+  .signup form input {
+    width: 100%;
+  }
+}

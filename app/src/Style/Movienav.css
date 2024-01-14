@@ -1,0 +1,58 @@
+.moviebar-component {
+  margin-top: 75px;
+  color: white;
+}
+
+.movie-menu ul li {
+  display: inline-block;
+  justify-content: space-between;
+  padding: 0px 10px 10px 30px;
+  list-style: none;
+}
+
+.movie-menu .a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.movie-menu a{
+    color: white;
+}
+.movie-menu a.active {
+  color: #e50914;
+}
+.movie-menu a.inactive {
+  color: #fff;
+}
+@media (max-width: 820px) {
+  .moviebar-component {
+    margin-top: 120px;
+    color: white;
+  }
+}
+@media (max-width: 392px) {
+  .movie-menu ul li {
+    padding: 10px 15px; /* Adjust padding for better spacing on smaller screens */
+  }
+
+  .movie-menu {
+    text-align: center; /* Center the menu items */
+  }
+
+  .movie-menu ul li {
+    display: inline-block; /* Change back to inline-block for horizontal layout */
+  }
+}
+@media (max-width: 415px) {
+  .movie-menu ul li {
+    padding: 10px 15px; /* Adjust padding for better spacing on smaller screens */
+  }
+
+  .movie-menu {
+    text-align: center; /* Center the menu items */
+  }
+
+  .movie-menu ul li {
+    display: inline-block; /* Change back to inline-block for horizontal layout */
+  }
+}
