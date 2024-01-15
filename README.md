@@ -3,7 +3,7 @@
 ## Flixxit
 
 Live Link: 
-Responsive for mobile and tab
+Responsive for mobile and tab https://flixxit-7095.onrender.com
 
 ## Description
 
