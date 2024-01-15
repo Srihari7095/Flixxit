@@ -1,4 +1,4 @@
-const url = 'https://flixxit-server-9v89.onrender.com'
+const url = 'https://flixxit-api-d3kq.onrender.com'
 // const url = `http://localhost:8080`
 
 export const signup = {
