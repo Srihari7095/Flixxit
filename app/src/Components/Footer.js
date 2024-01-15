@@ -20,11 +20,11 @@ function Footer() {
       </div>
       <div className='contact'>
       <h3>Contact</h3>
-      <p>pratya0011@gmail.com</p>
+      <p>srihari7095@gmail.com</p>
       </div>
       </div>
       <div className='copyright'>
-        © 2023 All rights reserved. Created by Pratya Kumar Tagore
+        © 2023 All rights reserved. Created by Srihareswara Rao N
       </div>
     </div>
   )
