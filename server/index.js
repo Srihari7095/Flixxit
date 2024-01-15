@@ -70,7 +70,7 @@ app.use("/user", userRouter);
 app.use("/user", videoRouter);
 app.use("/user", paymentRouter);
 
-app.use(authentiacteRoute, reteLimit)
+app.use(authenticateRoute, rateLimit)
 
 app.use("/admin", adminDashboad);
 app.use("/user", homeRouter);
