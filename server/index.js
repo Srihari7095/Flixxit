@@ -16,7 +16,7 @@ import videoRouter from "./routes/videoRoutes.js";
 import historyRouter from "./routes/historyRoute.js";
 import User from "./model/userModel.js";
 import bcrypt from "bcrypt";
-import { authentiacteRoute, reteLimit } from "./utils/Utils.js";
+import { authenticateRoute, reteLimit } from "./utils/Utils.js";
 
 import { config } from "dotenv";
 
@@ -70,7 +70,7 @@ app.use("/user", userRouter);
 app.use("/user", videoRouter);
 app.use("/user", paymentRouter);
 
-app.use(authentiacteRoute, reteLimit)
+app.use(authenticateRoute, reteLimit)
 
 app.use("/admin", adminDashboad);
 app.use("/user", homeRouter);
