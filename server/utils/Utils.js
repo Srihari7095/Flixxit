@@ -59,7 +59,7 @@ export const authenticateToken = (req, res, next) => {
   }
 };
 
-export const authentiacteRoute = async (req, res, next) => {
+export const authenticateRoute = async (req, res, next) => {
   let accessToken = req.header("access");
   let refreshToken = req.header("refresh");
   if (!accessToken) {
