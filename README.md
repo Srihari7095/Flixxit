@@ -52,7 +52,7 @@ title
 - Watchlist: Go to watchlist section to view watchlist
 -Watch video: r play the selected content on the platform with “Skip Intro” feature of 10sec. 
 
-- Admin: For admin signup visit https://flixxit-server-9v89.onrender.com/admin 
+- Admin: For admin signup visit (https://flixxit-api-d3kq.onrender.com/admin )
 and create new account with role "Admin"
 - Dashboard: Admin can see details like amount collected, subscribed users etc in Dashboard section
 
