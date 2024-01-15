@@ -16,7 +16,7 @@ import videoRouter from "./routes/videoRoutes.js";
 import historyRouter from "./routes/historyRoute.js";
 import User from "./model/userModel.js";
 import bcrypt from "bcrypt";
-import { authentiacteRoute, reteLimit } from "./utils/Utils.js";
+import { authenticateRoute, rateLimit } from "./utils/Utils.js";
 
 import { config } from "dotenv";
 
