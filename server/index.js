@@ -23,8 +23,8 @@ import { config } from "dotenv";
 config()
 const app = express();
 
-//app.use(cors({ origin: "https://flixxit-2i45.onrender.com" }));
-app.use(cors({ origin: "http://localhost:3000"}))
+app.use(cors({ origin: "https://flixxit-7095.onrender.com" }));
+//app.use(cors({ origin: "http://localhost:3000"}))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -56,7 +56,7 @@ app.post("/admin/signup", async (req, res) => {
         role: "admin",
       });
       await user.save();
-      return res.redirect("http://localhost:3000/");
+      return res.redirect("https://flixxit-7095.onrender.com/");
     } catch {
       req.send("error");
     }
