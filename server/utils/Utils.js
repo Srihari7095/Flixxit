@@ -100,7 +100,7 @@ export const authenticateRoute = async (req, res, next) => {
   }
 }
 
-export const rateLimit = rateLimit({
+export const reteLimit = rateLimit({
   windowMs: 60 * 1000, 
   max: 200,
   handler: (req, res) => {
